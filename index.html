@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>장재원의 홈페이지</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">92015415 장재원</div>
+        <ul class="nav">
+          <li>
+            <a href="index.html">홈</a>
+          </li>
+          <li>
+            <a href="about.html">소개</a>
+          </li>
+          <li>
+            <a href="contact.html">연락책</a>
+          </li>
+          <li>
+            <a href="project.html">프로젝트</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--메인 섹션-->
+    <section class="main">
+      <div class="container">
+        <p>이번 과제에서는 제가 좋아하는 캐릭터를 소개해보겠습니다.</p>
+        <h1>아이언맨 소개</h1>
+        <h3>현재시간: <span id="time"></span></h3>
+
+        <h4>
+          장재원의 github 주소 :
+          <a href="https://github.com/dodo4421">JJW's Git Hub</a>
+        </h4>
+
+        <p>
+          내가 좋아하는 아이언맨 수트업 :
+          <a href="https://youtube.com/watch?v=Q9OT3kEClMw&si=EnSIkaIECMiOmarE"
+            >Iron Man</a
+          >
+          |
+          <a href="https://youtube.com/watch?v=4ufCPCwGUtQ&si=EnSIkaIECMiOmarE"
+            >Mk2</a
+          >
+          |
+          <a href="https://youtube.com/watch?v=Xru4iPCnOco&si=EnSIkaIECMiOmarE"
+            >Mk5</a
+          >
+          |
+          <a href="https://youtube.com/watch?v=kAYaLC-8ehA&si=EnSIkaIECMiOmarE"
+            >Mk7</a
+          >
+          |
+          <a href="https://youtube.com/watch?v=98FO19TuI9A&si=EnSIkaIECMiOmarE"
+            >Mk42</a
+          >|
+          <a href="https://youtube.com/watch?v=CjpXj2BqJBY&si=EnSIkaIECMiOmarE"
+            >Mk85</a
+          >
+        </p>
+        <hr />
+        <p>
+          아이언맨 시그니처 컬러 :
+          <button onclick="red()">Red</button>
+          <button onclick="white()">White</button>
+          <button onclick="yellow()">Yellow</button>
+          <button onclick="reset()">Reset</button>
+        </p>
+
+        <p>
+          아이언맨 장본인 및 수트 종류:
+          <button onmouseover="showty()" onmouseout="hide()">Tony Stark</button>
+          <button onmouseover="showmk2()" onmouseout="hide()">Mk2</button>
+          <button onmouseover="showmk5()" onmouseout="hide()">Mk5</button>
+          <button onmouseover="showmk7()" onmouseout="hide()">Mk7</button>
+          <button onmouseover="showmk42()" onmouseout="hide()">Mk42</button>
+          <button onmouseover="showmk85()" onmouseout="hide()">Mk85</button>
+        </p>
+        <hr />
+        <br />
+        <div>
+          <img id="fig" height="200px" />
+          <p id="desc"></p>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
